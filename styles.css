@@ -1,0 +1,378 @@
+body{
+    background-color:#B01616;
+    width:100%;
+}
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+    
+}
+
+.col a{
+color:white;
+    font-family:Helvetica;
+
+}
+
+.col img{
+    border-style:solid;
+    border-width:5px;
+    border-color:black;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+#container{
+    width:99%;
+}
+
+#topheader{
+    background-color:#B01616;
+    border-bottom-style:solid;
+    border-color:white;
+    padding:5%;
+}
+
+#topheader p{
+    float:left;
+    color:white;
+    margin-bottom:5%;
+    font-size:150%;
+    font-family:Helvetica;
+}
+
+#logoLeftNav{
+    color:white;
+    float:left;
+    font-family:Helvetica;
+    font-size:300%;
+}
+
+#topnavbar{
+    display:inline;
+    list-style: none;
+    overflow: hidden;
+    background-color: #B01616;
+    padding-top:1%;
+    padding-bottom:.5%;
+    margin-bottom:-10%;
+    color:white;
+    float:right;
+    font-family:Helvetica;
+}
+
+#topnavbar ul{
+    list-style-type: none;
+    padding:0%;
+    display:inline;
+}
+
+#topnavbar li{
+    display: inline;
+    margin-bottom:-10%;
+    padding-right:10px;
+}
+
+#topnavbar a{
+    display: inline;
+    font-size: 125%;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    border-style:solid;
+    border-width:1px;
+    border-padding:5px;
+    border-color:white;
+}
+
+#topnavbar a:selection{
+    color:black;
+}
+
+#topnavbar a:hover{
+     color:black;
+     border-color:black;
+}
+
+.content{
+    margin:auto;
+    padding-left:1%;
+    padding-right:1%;
+    display:block;
+}
+
+#left{
+    width:40%;
+    display:inline;
+    float:left;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+#right_column{
+    width:40%;
+    display:inline;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+#page_description{
+    margin-top:5%;
+    color:white;
+    font-size:300%;
+    font-weight:bolder;
+    display:block;
+    font-family:Helvetica;
+    margin-left:1%;
+    text-align:left;
+    white-space: nowrap;
+}
+
+#page_description_paragraph{
+    color:white;
+    font-size:150%;
+    font-weight:bolder;
+    display:block;
+    font-family:Helvetica;
+    margin-left:1%;
+    text-align:left;
+    white-space: nowrap;
+}
+
+#leftInfo{
+    color:white;
+    display:block;
+    font-family:Helvetica;
+    font-size: 150%;
+}
+
+#leftInfo img{
+    margin-top:2%;
+    margin-right:0%;
+    border-style:solid;
+    border-color:black;
+    border-width:5px;
+    border-collapse:collapse;
+}
+
+#left_description{
+    color:white;
+    font-family:Tahoma; 
+    width:400px;
+}
+
+#rightInfo{
+    color:white;
+    display:block;
+    font-size: 150%;
+    font-family:Helvetica;
+}
+
+#rightInfo img{
+    margin-top:2%;
+    border-style:solid;
+    border-width:5px;
+    border-color:black;
+    border-collapse:collapse;
+    display:inline;
+}
+
+#right_description{
+    text-align:left;
+    color:white;
+    font-family:Helvetica;
+    width:400px;
+}
+
+footer{
+    margin-top:10%;
+    color:white;
+    font-family:Helvetica;
+    text-align:center;
+    float:center;
+    background-color:black;
+}
+
+.clear{
+    clear:both;
+}
+
+@media only screen and (max-width: 768px) { /*iPad media query*/
+    
+    body {
+        background-color:#B01616;
+        width:100%;
+    }
+
+    #topheader{
+        background-color:#B01616;
+        border-style:none;
+        padding:4%;
+    }
+
+    #logoLeftNav{
+    color:white;
+    float:left;
+    font-family:Helvetica;
+    font-size:200%;
+    }
+
+    .clear{
+        clear:both;
+    }
+
+    #container{
+        width:99%;
+    }
+
+    #topnavbar{
+        overflow: hidden;
+        background-color: #B01616;
+        color:white;
+        font-family:Helvetica;
+        margin-bottom:5%;
+        margin-right:17%;
+    }
+
+    #topnavbar a{
+        display: block;
+        font-size: 100%;
+        text-decoration: none;
+        color:white;
+        float:center;
+        text-align:left;
+        border-style:solid;
+        border-color:white;
+    }
+
+    #topnavbar a:hover{
+        color:black;
+        border-color:black;
+    }
+ 
+    #page_description{
+        margin-top:30%;
+        font-size:75%;
+        float:left;
+        display:block;
+        color:#B01616;
+    }
+
+    #page_description_paragraph{
+        font-size: 75%;
+        float:left;
+        display:block;
+        color:#B01616;
+    }
+
+    #left{ /*left div*/
+        width:50%;
+        display:inline;
+    }
+
+    #right_column{ /*right div*/
+        width:50%;
+        display:block;
+        float:left;
+        margin-left:5%;
+    }
+
+    #leftInfo{
+        margin-top:5%;
+        display:inline-block;
+        width:100%;
+
+    }
+
+    #rightInfo{
+        margin-top:5%;
+        display:block;
+        width:100%
+        margin-left:-50%;
+    }
+}
+
+@media only screen and (max-width: 436px) { /*Nexus 6P (phone) size mediau query*/
+  
+    body {
+        background-color:#B01616;
+        width:100%;
+    }
+
+    .col {  margin: 1% 0 1% 0%; }
+    .span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+
+    #container{
+        width:99%;
+    }
+
+    #topnavbar{
+        display:inline;
+        list-style: none;
+        overflow: hidden;
+        background-color: #B01616;
+        padding-top:1%;
+        padding-bottom:.5%;
+        margin-bottom:-10%;
+        margin-left:5%;
+        color:white;
+        float:right;
+        font-family:Helvetica;
+    }
+
+    #logoLeftNav p{
+    color:white;
+    float:left;
+    font-family:Helvetica;
+    display:inline;
+    margin-bottom:.5%;
+    font-size:125%;
+    }
+
+    #page_description{
+        color:#B01616;
+    }
+
+    #page_description_paragraph{
+        color:#B01616;
+    }
+
+    #leftInfo img{
+        display:none;
+    }
+
+    #rightInfo img{
+        display:none;
+    }
+
+    #right_description{
+        width:300px;
+    }
+
+    #left_description{
+        width:300px;
+    }
+}
+
